@@ -410,10 +410,9 @@ h3 {
 	.bento-grid {
 		display:grid;
 		grid-gap:30px;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(4 1fr);
 		grid-template-rows: repeat(3, 1fr);
-		height:960px;
-		
+		height:986px;
 		@media(max-width:1024px){
 			grid-template-rows: repeat(8, 1fr);
 		}
@@ -440,46 +439,52 @@ h3 {
 			&:hover {
 				img {
 					transform: scale(1.2);
+					opacity: 25%;
+					
 				}
+			}
+			i {
+				font-size: 30px;
+				
 			}
 			@media(max-width:768px){
 				height:240px;
 			}
 			&:nth-child(1) {
-				grid-column: span 2;
+				grid-column: span 1;
 				grid-row: span 1;
-				height: 320px;
-				width: 620px;
+				width: 90%;
+				justify-self: end;
 				@media(max-width:1024px){
-					grid-column: span 3;
-					grid-row: span 2;
+					grid-column: span 4;
+					grid-row: span 3;
+					width: 100%;
+					justify-self: center;
 				}
 			}
 			&:nth-child(2) {
 				grid-column: span 1;
 				grid-row: span 1;
-				width: 480px;
-				@media(max-width:1024px){
-					grid-column: span 3;
-					grid-row: span 2;
-				}
-			}
-			&:nth-child(3) {
-				grid-column: span 1;
-				grid-row: span 1;
-				width: 200px;
-				@media(max-width:1024px){
-					grid-column: span 2;
-					grid-row: span 4;
-				}
-			}
-			&:nth-child(4) {
-				grid-column: span 4;
-				grid-row: span 2;
-				height: 7;
+				width: 90%;
+				justify-self: start;
 				@media(max-width:1024px){
 					grid-column: span 4;
 					grid-row: span 3;
+					width: 100%;
+					justify-self: center;
+				}
+			}
+	
+			&:nth-child(3) {
+				grid-column: span 2;
+				grid-row: span 2;
+				width: 80%;
+				justify-self: center;
+				@media(max-width:1024px){
+					grid-column: span 4;
+					grid-row: span 3;
+					width: 100%;
+					justify-self: center;
 				}
 			}
 		}
@@ -487,6 +492,9 @@ h3 {
 }
 
 footer {
-    color: #555;
+	margin-bottom: -10%;
+	height: 2.5rem;
+    color: #4e4c4c;
     text-align: center;
+	
 }
