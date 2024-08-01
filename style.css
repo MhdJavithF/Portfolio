@@ -24,7 +24,7 @@ body {
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 20px;
-	padding-bottom: 2.5rem;
+	padding-bottom: 1rem;
 }
 
 a {
@@ -492,9 +492,17 @@ h3 {
 }
 
 footer {
-	margin-bottom: -10%;
+	margin: auto auto -1%;
 	height: 2.5rem;
-    color: #4e4c4c;
-    text-align: center;
-	
+    color: #5a5757;
+	max-width:1440px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #535657;
+	color: aliceblue;
+	font-size: 1.1rem;
+	@media (max-width:768px){
+		font-size: 0.8rem;
+	}
 }
