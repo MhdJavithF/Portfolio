@@ -112,7 +112,7 @@ header {
 		align-items:center;
 		nav {
 			margin-top:10px;
-			width:100%;
+			width:75%;
 			ul {
 				display:none;
 				flex-direction:column;
