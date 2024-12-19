@@ -66,6 +66,12 @@ header {
 		.logo-text {
 			flex:1;
 		}
+		@media screen and (max-width:768px){
+			.logo-text span {
+				display:none;
+			}
+			
+		}
 	}
 
 	#bismillah {
