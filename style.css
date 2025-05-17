@@ -240,8 +240,15 @@ h4 span{
 		.social-links {
             text-align: end;
 			a {
+				i {
+					font-size: 40px;
+					color: #3a3737;
+				}
 				&:hover {
 					text-decoration:none;
+					i {
+						color: #000;
+					}
 				}
 			}
 		}
@@ -538,9 +545,6 @@ h3 {
 	}
 }
 
-
-
-
 footer {
 	margin: auto auto -1%;
 	height: 2.5rem;
@@ -555,4 +559,50 @@ footer {
 	@media (max-width:768px){
 		font-size: 0.8rem;
 	}
+	i {
+		color: #e2f8ff;
+		font-size: 16px;
+	}
+}
+
+/* For smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-up animation on scroll */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+[data-animate].in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  background-color: var(--primary-color, #007BFF); /* fallback to blue */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: var(--primary-hover-color, #0056b3);
+}
+
+#backToTop.show {
+  opacity: 1;
 }

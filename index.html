@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Mohamed Javith - Frontend Developer Portfolio showcasing skills, projects, and experience." />
 	<title>Mohamed-Javith Portfolio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image" href="./imgs/favicon.png">
+	<script src="https://kit.fontawesome.com/3fe2f1f328.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<header>
 		<a href="#" class="logo-holder">
@@ -34,43 +42,48 @@
 				</li>
 			</ul>
 			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu()">
-				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+					width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
 				</svg>
 			</a>
 		</nav>
 	</header>
 	<main>
-		<section class="hero container">
+		<section class="hero container" data-animate>
 			<div class="hero-blue">
 				<div>
-					<h1><small>Hi I'm</small>
+					<h1 data-animate><small data-animate>Hi I'm</small>
 						Mohamed Javith
 					</h1>
-                    <h4>I'm a <span>Frontend Developer</span></h4>
-					<p>
-						Passionate about creating dynamic, user-friendly web applications. <span>Currently, I'm expanding my skills in the MERN stack (MongoDB, Express.js, React, Node.js) as I work towards becoming a full-stack developer.</span> <span>I enjoy building applications and have experience in designing responsive UIs & building scalable applications.</span>
-                    </p>
+					<h4 data-animate>I'm a <span data-animate>Frontend Developer</span></h4>
+					<p data-animate>
+						Passionate about creating dynamic, user-friendly web applications. <span>Currently, I'm
+							expanding my skills in the MERN stack (MongoDB, Express.js, React, Node.js) as I work
+							towards becoming a full-stack developer.</span> <span>I enjoy building applications and have
+							experience in designing responsive UIs & building scalable applications.</span>
+					</p>
 					<div class="call-to-action">
-						<a href="./Mohamed-Javith-A-Frontend.pdf" class="button black" target="_blank">
-							View Resume
+						<a href="./Mohamed-Javith-A-Frontend.pdf" class="button black" target="_blank"
+							rel="noopener noreferrer">
+							View Resume <i class="fa-solid fa-arrow-up-right-from-square"></i>
 						</a>
-						<a href="mailto:javithmd001@gmail.com?subject=Contact%20Request&body=You%20can%20also%20reach%20me%20at%20+919865803055" class="button white">
-							Contact Me
-						</a>
+						<a href="tel:+919865803055" class="button">Phone <i class="fas fa-phone-alt"></i></a>
+						<a href="mailto:javithmd001@gmail.com" class="button black">Email <i
+								class="fas fa-envelope"></i></a>
 					</div>
-					<div class="social-links">
+					<div class="social-links" data-animate>
 						<a href="https://github.com/MhdJavithF" target="_blank">
-							<img src="./imgs/github.png" alt="GitHub" width="50" />
+							<i class="fab fa-github"></i>
 						</a>
 						<a href="https://www.linkedin.com/in/mhd-javithf/" target="_blank">
-							<img src="./imgs/linkedin.png" alt="LinkedIn" width="50"/>
+							<i class="fab fa-linkedin"></i>
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="hero-yellow">
-				<img src="./imgs/hero-image.png" alt="Mhd Javith" width="90%" />
+			<div class="hero-yellow" data-animate>
+				<img src="./imgs/hero-image.png" alt="Mhd Javith" width="90%" data-animate />
 			</div>
 		</section>
 		<section class="logos container">
@@ -79,38 +92,38 @@
 					<img src="./imgs/html.png" alt="HTML" width="115" />
 					<img src="./imgs/css.png" alt="CSS" width="115" />
 					<img src="./imgs/javascript.png" alt="JS" width="115" />
-                    <img src="./imgs/mongo.png" width="115" alt="MongoDB" />
-                    <img src="./imgs/express.png" width="115" alt="Express JS" />
-                    <img src="./imgs/react.png" width="115" alt="React" />
-					<img src="./imgs/node.png" width="115" alt="Node JS" />		
+					<img src="./imgs/mongo.png" width="115" alt="MongoDB" />
+					<img src="./imgs/express.png" width="115" alt="Express JS" />
+					<img src="./imgs/react.png" width="115" alt="React" />
+					<img src="./imgs/node.png" width="115" alt="Node JS" />
 					<img src="./imgs/chatgpt.png" alt="ChatGPT" width="115" />
 					<img src="./imgs/java.png" width="115" alt="Java" />
 					<img src="./imgs/vscode.png" width="115" alt="VS Code" />
-					<img src="./imgs/python.png" width="115" alt="Python" /> 
-                    <img src="./imgs/github-logo.png" width="115" alt="GitHub" /> 
-                    <img src="./imgs/bootstrap.png" width="115" alt="Bootstrap" />
-                    <img src="./imgs/tailwind.png" width="115" alt="Tailwind" /> 
-                    <img src="./imgs/jquery.png" width="115" alt="Jquery" /> 
+					<img src="./imgs/python.png" width="115" alt="Python" />
+					<img src="./imgs/github-logo.png" width="115" alt="GitHub" />
+					<img src="./imgs/bootstrap.png" width="115" alt="Bootstrap" />
+					<img src="./imgs/tailwind.png" width="115" alt="Tailwind" />
+					<img src="./imgs/jquery.png" width="115" alt="Jquery" />
 
-                    <img src="./imgs/html.png" alt="HTML" width="115" />
+					<img src="./imgs/html.png" alt="HTML" width="115" />
 					<img src="./imgs/css.png" alt="CSS" width="115" />
 					<img src="./imgs/javascript.png" alt="JS" width="115" />
-                    <img src="./imgs/mongo.png" width="115 alt="MongoDB" />
-                    <img src="./imgs/express.png" width="115" alt="Express JS" />
-                    <img src="./imgs/react.png" width="115" alt="React" />
-					<img src="./imgs/node.png" width="115" alt="Node JS" />		
+					<img src="./imgs/mongo.png" width="115 alt=" MongoDB" />
+					<img src="./imgs/express.png" width="115" alt="Express JS" />
+					<img src="./imgs/react.png" width="115" alt="React" />
+					<img src="./imgs/node.png" width="115" alt="Node JS" />
 					<img src="./imgs/chatgpt.png" alt="ChatGPT" width="115" />
 					<img src="./imgs/java.png" width="115" alt="Java" />
 					<img src="./imgs/vscode.png" width="115" alt="VS Code" />
-					<img src="./imgs/python.png" width="115" alt="Python" /> 
-                    <img src="./imgs/github-logo.png" width="115"  alt="GitHub" /> 
+					<img src="./imgs/python.png" width="115" alt="Python" />
+					<img src="./imgs/github-logo.png" width="115" alt="GitHub" />
 					<img src="./imgs/bootstrap.png" width="115" alt="Bootstrap" />
-                    <img src="./imgs/tailwind.png" width="115" alt="Tailwind" /> 
-                    <img src="./imgs/jquery.png" width="115" alt="Jquery" /> 
+					<img src="./imgs/tailwind.png" width="115" alt="Tailwind" />
+					<img src="./imgs/jquery.png" width="115" alt="Jquery" />
 				</div>
 			</div>
 		</section>
-		<section id="skills" class="skills container">
+		<section id="skills" class="skills container" data-animate>
 			<h2>
 				<small>About Me</small>
 				Skills
@@ -135,33 +148,41 @@
 						<li>Node.js</li>
 						<li>Express.js</li>
 					</ul>
-                    <h3>Database</h3>
+					<h3>Database</h3>
 					<ul>
 						<li>MySQL</li>
 						<li>MongoDB</li>
 					</ul>
 				</div>
-				<div class="right-column">
-					<h3>A bit about me</h3>
-					<p>
-						Hi I'm a Frontend Developer developer with a strong foundation in frontend technologies and specialize in creating seamless, responsive web applications using React. With a passion for building dynamic user interfaces, I leverage the power of modern tools and frameworks to deliver high-quality, engaging web experiences.
+				<div class="right-column" data-animate>
+					<h3 data-animate>A bit about me</h3>
+					<p data-animate>
+						Hi I'm a Frontend Developer developer with a strong foundation in frontend technologies and
+						specialize in creating seamless, responsive web applications using React. With a passion for
+						building dynamic user interfaces, I leverage the power of modern tools and frameworks to deliver
+						high-quality, engaging web experiences.
 					</p>
-					<p>
-						I'm gaining hands-on experience with both front-end and back-end technologies, including HTML, CSS, JavaScript, and frameworks like React for the client side, along with Node.js and Express.js for server-side development. I'm also exploring database management with tools such as MongoDB and MySQL.
+					<p data-animate>
+						I'm gaining hands-on experience with both front-end and back-end technologies, including HTML,
+						CSS, JavaScript, and frameworks like React for the client side, along with Node.js and
+						Express.js for server-side development. I'm also exploring database management with tools such
+						as MongoDB and MySQL.
 					</p>
-                    <p>
-                        I have developed a variety of projects, including IMDb (a movie database app), Vibe Snap (a social media feed app), a Kanban board for task management, and a portfolio website to showcase my work and skills.
-                    </p>
+					<p data-animate>
+						I have developed a variety of projects, including IMDb (a movie database app), Vibe Snap (a
+						social media feed app), a Kanban board for task management, and a portfolio website to showcase
+						my work and skills.
+					</p>
 				</div>
 			</div>
 		</section>
-		<section class="work-experience container">
+		<section class="work-experience container" data-animate>
 			<h2>
 				<small>Recent</small>
 				Work Experience
 			</h2>
 			<div class="jobs">
-				<article>
+				<article data-animate>
 					<figure>
 						<div>
 							<img src="./imgs/tcs.png" alt="SE" width="100%" />
@@ -174,7 +195,7 @@
 					<div>2024 - Current</div>
 					<p>Enhancing a website using React.js to elevate its functionality and UX</p>
 				</article>
-				<article>
+				<article data-animate>
 					<figure>
 						<div>
 							<img src="./imgs/tcs.png" alt="TCS-ASE" width="100%" />
@@ -188,7 +209,7 @@
 					<div>2023 - 2024</div>
 					<p>Developed the frontend for the order management support tool</p>
 				</article>
-				<article>
+				<article data-animate>
 					<figure>
 						<div>
 							<img src="./imgs/TCS-1.png" alt="TCS-ASE Trainee" width="100%" />
@@ -200,10 +221,10 @@
 					<h3>ESVS Support</h3>
 					<div>2022 - 2023</div>
 					<p>Worked on resolving backend payment-related issues in the retail system</p>
-				</article>				
+				</article>
 			</div>
 		</section>
-		<section id="projects" class="bento container">
+		<section id="projects" class="bento container" data-animate>
 			<h2>
 				<small>
 					Previously
@@ -214,50 +235,50 @@
 			<br>
 			<div class="bento-grid">
 
-				<a href="https://mhdjavithf.github.io/Bishmi-Hotel/" class="bento-item" target="_blank">
+				<a href="https://mhdjavithf.github.io/Bishmi-Hotel/" class="bento-item" target="_blank" data-animate>
 					<img src="./imgs/bishmi.png" alt="Bishmi Hotel" width="100%" />
 					<i class="fa-solid fa-eye"></i>
 					<h6>Preview</h6>
-					<i class="fa-brands fa-bootstrap style="color: #563d7c"></i>
+					<i class="fa-brands fa-bootstrap" style="color: #563d7c;"></i>
 				</a>
 
-				<a href="https://product-cart-redux-eight.vercel.app/" class="bento-item" target="_blank">
+				<a href="https://product-cart-redux-eight.vercel.app/" class="bento-item" target="_blank" data-animate>
 					<img src="./imgs/cart.png" alt="product-cart" width="100%" />
 					<i class="fa-solid fa-eye"></i>
 					<h6>Preview</h6>
 					<i class="fa-brands fa-react" style="color: #74C0FC;"></i>
 				</a>
 
-				<a href="https://vibe-snap-app-d8ui.vercel.app/" class="bento-item" target="_blank">
+				<a href="https://vibe-snap-app-d8ui.vercel.app/" class="bento-item" target="_blank" data-animate>
 					<img src="./imgs/vibe.png" alt="vibe" width="100%" />
 					<i class="fa-solid fa-eye"></i>
 					<h6>Preview</h6>
 					<i class="fa-brands fa-react" style="color: #74C0FC;"></i>
 				</a>
 
-				<a href="https://imdb-react-app-ten.vercel.app/" class="bento-item" target="_blank">
+				<a href="https://imdb-react-app-ten.vercel.app/" class="bento-item" target="_blank" data-animate>
 					<img src="./imgs/imdb2.png" alt="imdb" width="100%" />
 					<i class="fa-solid fa-eye"></i>
 					<h6>Preview</h6>
 					<i class="fa-brands fa-react" style="color: #74C0FC;"></i>
 				</a>
 
-				<a href="https://mhdjavithf.github.io/Weather-app/" class="bento-item" target="_blank">
+				<a href="https://mhdjavithf.github.io/Weather-app/" class="bento-item" target="_blank" data-animate>
 					<img src="./imgs/weather2.jpg" alt="Weather" width="100%" />
 					<i class="fa-solid fa-eye"></i>
 					<h6>Preview</h6>
 					<i class="fa-brands fa-square-js" style="color: #f5c61d;"></i>
 				</a>
-				
-				<a href="https://mhdjavithf.github.io/Kanban-Board/" class="bento-item" target="_blank">
+
+				<a href="https://mhdjavithf.github.io/Kanban-Board/" class="bento-item" target="_blank" data-animate>
 					<img src="./imgs/kanban.png" alt="Kanban Board" width="100%" />
 					<i class="fa-solid fa-eye"></i>
 					<h6>Preview</h6>
-					<i class="fa-brands fa-square-js" style="color: f5c61d;"></i>
+					<i class="fa-brands fa-square-js" style="color: #000000;"></i>
 				</a>
 
-				
-				<a href="https://mhdjavithf.github.io/Amazon-clone-/" class="bento-item" target="_blank">
+
+				<a href="https://mhdjavithf.github.io/Amazon-clone-/" class="bento-item" target="_blank" data-animate>
 					<img src="./imgs/amazon1.png" alt="Amazon clone" width="100%" />
 					<i class="fa-solid fa-eye"></i>
 					<h6>Preview</h6>
@@ -267,9 +288,34 @@
 			</div>
 		</section>
 	</main>
-    <footer>
-        <h6><small>Copyright © 2025, Designed by Mohamed-Javith</small></h6>
-    </footer>
+	<footer>
+		<h6><small>Copyright © 2025, Designed by Mohamed-Javith</small>
+			<a href="https://github.com/MhdJavithF" target="_blank">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/mhd-javithf/" target="_blank">
+				<i class="fab fa-linkedin"></i>
+			</a>
+		</h6>
+	</footer>
+	<button id="backToTop" title="Go to top">
+		<i class="fas fa-arrow-up"></i>
+	</button>
 	<script src="script.js"></script>
+	<script>
+		const observer = new IntersectionObserver(
+			entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('in-view');
+					}
+				});
+			},
+			{ threshold: 0.1 }
+		);
+
+		document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+	</script>
 </body>
+
 </html>
