@@ -15,10 +15,10 @@ backToTopButton.addEventListener("click", () => {
   });
 });
 
-const toggle = document.getElementById('darkToggle');
-  toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-});
+// const toggle = document.getElementById('darkToggle');
+//   toggle.addEventListener('click', () => {
+//     document.body.classList.toggle('dark-mode');
+// });
 
 function toggleMobileMenu(){
 	document.getElementById("menu").classList.toggle("active");
