@@ -118,6 +118,20 @@ header {
 					}
 				}
 			}
+			#live {
+				background-color: red;
+				border-radius: 10px;
+				a { 
+					color: #ffffff;
+					font-weight: 600;
+					&:hover {
+						background-color: #000000;
+						border-radius: 10px;
+						text-decoration: none;
+					}
+				}
+
+			}
 		}
 
 		.mobile-toggle {
