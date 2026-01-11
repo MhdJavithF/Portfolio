@@ -311,14 +311,21 @@ h4 span:nth-child(2) {
 			a {
 				i {
 					font-size: 40px;
-					color: #3a3737;
+				}
+
+				&:nth-child(1) i {
+					color: #000000;
+				}
+
+				&:nth-child(2) i {
+					color: #0077B5;
 				}
 
 				&:hover {
 					text-decoration: none;
 
 					i {
-						color: #000;
+						color: var(--blue-400);
 					}
 				}
 			}
