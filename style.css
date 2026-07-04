@@ -905,3 +905,16 @@ html {
 #backToTop.show {
 	opacity: 1;
 }
+
+.truncated-text {
+    display: none;
+}
+.see-more-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--blue);
+    white-space: nowrap;
+}
+.see-more-dots {
+    font-weight: 600;
+}

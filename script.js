@@ -23,3 +23,16 @@ backToTopButton.addEventListener("click", () => {
 function toggleMobileMenu(){
 	document.getElementById("menu").classList.toggle("active");
 };
+
+function toggleSeeMore(link) {
+    const p = link.closest('p');
+    const truncated = p.querySelector('.truncated-text');
+    const dots = p.querySelector('.see-more-dots');
+    
+    // Use getComputedStyle instead of inline style check
+    const isHidden = window.getComputedStyle(truncated).display === 'none';
+    
+    truncated.style.display = isHidden ? 'inline' : 'none';
+    dots.style.display = isHidden ? 'none' : 'inline';
+    link.textContent = isHidden ? 'See less' : 'See more';
+}
