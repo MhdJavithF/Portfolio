@@ -2,12 +2,12 @@
    SCROLL PROGRESS BAR
    ============================================================ */
 const scrollProgress = document.getElementById('scroll-progress');
-const backToTopBtn   = document.getElementById('backToTop');
+const backToTopBtn = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
-  const scrollTop    = window.scrollY;
-  const docHeight    = document.documentElement.scrollHeight - window.innerHeight;
-  const scrolled     = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolled = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
 
   if (scrollProgress) scrollProgress.style.width = scrolled + '%';
 
@@ -35,7 +35,7 @@ if (backToTopBtn) {
    ============================================================ */
 function updateActiveNav() {
   const sections = document.querySelectorAll('section[id]');
-  const navLinks  = document.querySelectorAll('nav ul li');
+  const navLinks = document.querySelectorAll('nav ul li');
   let currentId = '';
 
   sections.forEach(section => {
@@ -77,8 +77,8 @@ function typeRole() {
     typingEl.textContent = current.slice(0, charIndex--);
     if (charIndex < 0) {
       isDeleting = false;
-      roleIndex  = (roleIndex + 1) % roles.length;
-      charIndex  = 0;
+      roleIndex = (roleIndex + 1) % roles.length;
+      charIndex = 0;
       setTimeout(typeRole, 420);
       return;
     }
@@ -117,14 +117,14 @@ function toggleMobileMenu() {
    SEE MORE / SEE LESS INLINE TOGGLE
    ============================================================ */
 function toggleSeeMore(link) {
-  const p         = link.closest('p');
+  const p = link.closest('p');
   const truncated = p.querySelector('.truncated-text');
-  const dots      = p.querySelector('.see-more-dots');
-  const isHidden  = window.getComputedStyle(truncated).display === 'none';
+  const dots = p.querySelector('.see-more-dots');
+  const isHidden = window.getComputedStyle(truncated).display === 'none';
 
   truncated.style.display = isHidden ? 'inline' : 'none';
-  dots.style.display      = isHidden ? 'none'   : 'inline';
-  link.textContent        = isHidden ? 'See less' : 'See more';
+  dots.style.display = isHidden ? 'none' : 'inline';
+  link.textContent = isHidden ? 'See less' : 'See more';
 }
 
 /* ============================================================
